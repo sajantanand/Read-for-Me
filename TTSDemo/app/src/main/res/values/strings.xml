@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TTSDemo</string>
+    <string name="words">TTS Demonstration</string>
+    <string name="action_settings">Settings</string>
+    <string name="buttonMessage">Say It</string>
+    <string name="message">Hello World!</string>
+
+</resources>
