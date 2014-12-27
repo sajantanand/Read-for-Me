@@ -1,0 +1,22 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 7
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.pearson.pandpsample.dictionary"
+        minSdkVersion 7
+        targetSdkVersion 7
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile files('libs/gson-2.3.1.jar')
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Sajant\AndroidStudioProjects\PearsonDictionaryAndroid-master\app\libs\gson-2.3.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="C:\Users\Sajant\AndroidStudioProjects\PearsonDictionaryAndroid-master\app\build\intermediates\pre-dexed\debug\gson-2.3.1-b0729b9e51da6dde0a74732e3d85388565263cf5.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sajant\Documents\GitHub\Read-for-Me\PearsonDictionaryAPIDemo\app\libs\gson-2.3.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="C:\Users\Sajant\Documents\GitHub\Read-for-Me\PearsonDictionaryAPIDemo\app\build\intermediates\pre-dexed\debug\gson-2.3.1-c8cea49bce55a5ec2f82969da502f9a40b16f456.jar" />
+    </item>
+
+</items>

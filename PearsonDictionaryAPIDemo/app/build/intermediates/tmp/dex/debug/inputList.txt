@@ -1,0 +1,2 @@
+C:\Users\Sajant\Documents\GitHub\Read-for-Me\PearsonDictionaryAPIDemo\app\build\intermediates\classes\debug
+C:\Users\Sajant\Documents\GitHub\Read-for-Me\PearsonDictionaryAPIDemo\app\build\intermediates\pre-dexed\debug\gson-2.3.1-c8cea49bce55a5ec2f82969da502f9a40b16f456.jar

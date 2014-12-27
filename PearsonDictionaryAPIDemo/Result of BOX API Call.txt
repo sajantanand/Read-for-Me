@@ -1,0 +1,293 @@
+{
+  "status": 200,
+  "offset": 0,
+  "limit": 10,
+  "count": 10,
+  "total": 52,
+  "url": "/v2/dictionaries/ldoce5/entries?headword=box",
+  "results": [
+    {
+      "datasets": [
+        "ldoce5",
+        "dictionary",
+        "sandbox"
+      ],
+      "headword": "boxed",
+      "id": "cqAF1Ct4Fz",
+      "part_of_speech": "adjective",
+      "pronunciations": [
+        {
+          "audio": [
+            {
+              "lang": "British English",
+              "type": "pronunciation",
+              "url": "/v2/dictionaries/assets/ldoce/gb_pron/boxed0205.mp3"
+            }
+          ],
+          "ipa": "bɒkst"
+        },
+        {
+          "audio": [
+            {
+              "lang": "American English",
+              "type": "pronunciation",
+              "url": "/v2/dictionaries/assets/ldoce/us_pron/laadboxed.mp3"
+            }
+          ],
+          "ipa": "bɑːkst",
+          "lang": "American English"
+        }
+      ],
+      "senses": [
+        {
+          "definition": [
+            "sold in a box or boxes"
+          ],
+          "examples": [
+            {
+              "audio": [
+                {
+                  "type": "example",
+                  "url": "/v2/dictionaries/assets/ldoce/exa_pron/p008-000904187.mp3"
+                }
+              ],
+              "text": "a boxed set of CDs"
+            }
+          ]
+        }
+      ],
+      "url": "/v2/dictionaries/entries/cqAF1Ct4Fz"
+    },
+    {
+      "datasets": [
+        "ldoce5",
+        "dictionary",
+        "sandbox"
+      ],
+      "headword": "box",
+      "homnum": 1,
+      "id": "cqAF1CYbFA",
+      "part_of_speech": "noun",
+      "pronunciations": [
+        {
+          "audio": [
+            {
+              "lang": "British English",
+              "type": "pronunciation",
+              "url": "/v2/dictionaries/assets/ldoce/gb_pron/brelasdebox.mp3"
+            }
+          ],
+          "ipa": "bɒks"
+        },
+        {
+          "audio": [
+            {
+              "lang": "American English",
+              "type": "pronunciation",
+              "url": "/v2/dictionaries/assets/ldoce/us_pron/box1.mp3"
+            }
+          ],
+          "ipa": "bɑːks",
+          "lang": "American English"
+        }
+      ],
+      "senses": [
+        {
+          "collocation_examples": [
+            {
+              "collocation": "cardboard/wooden/plastic etc box",
+              "example": {
+                "audio": [
+                  {
+                    "type": "example",
+                    "url": "/v2/dictionaries/assets/ldoce/exa_pron/p008-001031848.mp3"
+                  }
+                ],
+                "text": "a strong cardboard box"
+              }
+            }
+          ],
+          "definition": [
+            "a container for putting things in, especially one with four stiff straight sides"
+          ],
+          "gramatical_info": {
+            "type": "countable"
+          },
+          "signpost": "container"
+        }
+      ],
+      "url": "/v2/dictionaries/entries/cqAF1CYbFA"
+    },
+    {
+      "datasets": [
+        "ldoce5",
+        "dictionary",
+        "sandbox"
+      ],
+      "headword": "box",
+      "homnum": 2,
+      "id": "cqAF1Cem3w",
+      "part_of_speech": "verb",
+      "senses": [
+        {
+          "definition": [
+            "to fight someone as a sport by hitting them with your closed hands inside big leather gloves"
+          ],
+          "gramatical_info": {
+            "type": "intransitive and transitive"
+          }
+        }
+      ],
+      "url": "/v2/dictionaries/entries/cqAF1Cem3w"
+    },
+    {
+      "datasets": [
+        "ldoce5",
+        "dictionary",
+        "sandbox"
+      ],
+      "headword": "boxing",
+      "id": "cqAF1DAG1g",
+      "part_of_speech": "noun",
+      "pronunciations": [
+        {
+          "audio": [
+            {
+              "lang": "British English",
+              "type": "pronunciation",
+              "url": "/v2/dictionaries/assets/ldoce/gb_pron/brelasdeboxing.mp3"
+            }
+          ],
+          "ipa": "ˈbɒksɪŋ"
+        },
+        {
+          "audio": [
+            {
+              "lang": "American English",
+              "type": "pronunciation",
+              "url": "/v2/dictionaries/assets/ldoce/us_pron/boxing.mp3"
+            }
+          ],
+          "ipa": "ˈbɑːk-",
+          "lang": "American English"
+        }
+      ],
+      "senses": [
+        {
+          "definition": [
+            "the sport of fighting while wearing big leather gloves"
+          ]
+        }
+      ],
+      "url": "/v2/dictionaries/entries/cqAF1DAG1g"
+    },
+    {
+      "datasets": [
+        "ldoce5",
+        "dictionary"
+      ],
+      "headword": "hat box",
+      "id": "cqAFKvZmrz",
+      "part_of_speech": "noun",
+      "senses": [
+        {
+          "definition": [
+            "a special box used for carrying a hat in"
+          ]
+        }
+      ],
+      "url": "/v2/dictionaries/entries/cqAFKvZmrz"
+    },
+    {
+      "datasets": [
+        "ldoce5",
+        "dictionary"
+      ],
+      "headword": "honesty box",
+      "id": "cqAFN7vSRZ",
+      "part_of_speech": "noun",
+      "senses": [
+        {
+          "definition": [
+            "a box for people to put money in to pay for something, when there is no one there to take the payment"
+          ]
+        }
+      ],
+      "url": "/v2/dictionaries/entries/cqAFN7vSRZ"
+    },
+    {
+      "datasets": [
+        "ldoce5",
+        "dictionary"
+      ],
+      "headword": "dialogue box",
+      "id": "cqAF9jPAdG",
+      "part_of_speech": "noun",
+      "senses": [
+        {
+          "definition": [
+            "a box that appears on your computer screen when the program you are using needs to ask you a question before it can continue to do something. You click on one part of the box to give your answer."
+          ]
+        }
+      ],
+      "url": "/v2/dictionaries/entries/cqAF9jPAdG"
+    },
+    {
+      "datasets": [
+        "ldoce5",
+        "dictionary",
+        "sandbox"
+      ],
+      "headword": "collection box",
+      "id": "cqAF5SwnyA",
+      "part_of_speech": "noun",
+      "senses": [
+        {
+          "definition": [
+            "a container with a small hole in the top, that people put money for charity into"
+          ]
+        }
+      ],
+      "url": "/v2/dictionaries/entries/cqAF5SwnyA"
+    },
+    {
+      "datasets": [
+        "ldoce5",
+        "dictionary",
+        "sandbox"
+      ],
+      "headword": "Boxing Day",
+      "id": "cqAF1DCtKn",
+      "part_of_speech": "noun",
+      "senses": [
+        {
+          "definition": [
+            "a national holiday in England and Wales, on the day after Christmas Day"
+          ],
+          "geography": "British English"
+        }
+      ],
+      "url": "/v2/dictionaries/entries/cqAF1DCtKn"
+    },
+    {
+      "datasets": [
+        "ldoce5",
+        "dictionary",
+        "sandbox"
+      ],
+      "headword": "box canyon",
+      "id": "cqAF1CmCb5",
+      "part_of_speech": "noun",
+      "senses": [
+        {
+          "definition": [
+            "a deep narrow valley with very straight sides and no way out"
+          ],
+          "geography": "American English",
+          "synonym": "gorge"
+        }
+      ],
+      "url": "/v2/dictionaries/entries/cqAF1CmCb5"
+    }
+  ]
+}

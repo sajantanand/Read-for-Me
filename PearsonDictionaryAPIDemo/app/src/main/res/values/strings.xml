@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Enter a word to use the Longman Dictionary.</string>
+    <string name="app_name">Pearson Dictionary</string>
+    <string name="button1">Define</string>
+    <string name="button2">Alternate</string>
+    <string name="hint1">Word to be Defined</string>
+</resources>
