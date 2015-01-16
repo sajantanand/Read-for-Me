@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <ImageButton
+        android:id="@+id/imageButtonForward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="14dp"
+        android:onClick="forward"
+        android:src="@android:drawable/ic_media_ff"
+        android:contentDescription="@string/description"
+        android:layout_alignEnd="@+id/textViewNowPlaying" />
+
+    <ImageButton
+        android:id="@+id/imageButtonRewind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageButtonPause"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/imageButtonPause"
+        android:onClick="rewind"
+        android:src="@android:drawable/ic_media_rew"
+        android:contentDescription="@string/description" />
+
+    <ImageButton
+        android:id="@+id/imageButtonPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButtonPlay"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/imageButtonPlay"
+        android:onClick="pause"
+        android:src="@android:drawable/ic_media_pause"
+        android:contentDescription="@string/description" />
+
+    <ImageButton
+        android:id="@+id/imageButtonPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButtonForward"
+        android:layout_marginLeft="24dp"
+        android:layout_toRightOf="@+id/imageButtonForward"
+        android:onClick="play"
+        android:src="@android:drawable/ic_media_play"
+        android:contentDescription="@string/description" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButtonForward"
+        android:layout_toLeftOf="@+id/textViewEndTime"
+        android:layout_toRightOf="@+id/textViewStartTime" />
+
+    <TextView
+        android:id="@+id/textViewStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageButtonForward"
+        android:layout_alignTop="@+id/seekBar1"
+        android:text="@string/initial_Time"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textViewEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageButtonRewind"
+        android:layout_alignTop="@+id/seekBar1"
+        android:text="@string/initial_Time"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textViewNowPlaying"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world2"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/editTextDefinition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:hint="@string/message3"
+        android:layout_below="@+id/textViewNowPlaying"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentStart="true" />
+
+    <Button android:id="@+id/buttonDefine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button1"
+        android:layout_below="@+id/textViewNowPlaying"
+        android:layout_marginTop="50dp"
+        android:onClick="define"
+        android:layout_alignBottom="@+id/editTextDefinition"
+        android:layout_toLeftOf="@+id/buttonAlternate"
+        android:layout_toRightOf="@+id/editTextDefinition" />
+
+    <Button android:id="@+id/buttonAlternate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button2"
+        android:onClick="alternate"
+        android:layout_alignTop="@+id/buttonDefine"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignBottom="@+id/buttonDefine" />
+
+    <TextView android:id="@+id/textViewDefinition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/buttonAlternate"
+        android:layout_marginTop="15dp" />
+
+
+
+
+    <!--
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView3"
+        android:src="@drawable/ic_launcher"/>
+    -->
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBaseline="@+id/textViewNowPlaying"
+        android:layout_alignBottom="@+id/textViewNowPlaying"
+        android:layout_toRightOf="@+id/imageButtonPlay"
+        android:text="TextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mediaPlayer"
+        android:id="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+
+</RelativeLayout>

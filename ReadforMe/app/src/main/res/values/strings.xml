@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Read for Me</string>
+    <string name="words">Input Screen: Enter the text you wish to be converted into a sound file into the large box and press the "Synthesize File" button to write it to memory. To look at files previously creaked, click the "View Files" button.</string>
+    <string name="action_settings">Settings</string>
+    <string name="buttonMessage">Synthesize File</string>
+    <string name="button1">Define</string>
+    <string name="button2">Alternate</string>
+    <string name="message1">Please enter the text you want converted.</string>
+    <string name="message2">File Name</string>
+    <string name="message3">Search Word</string>
+    <string name="title_activity_media_player">MediaPlayerActivity</string>
+    <string name="fileExplorer">File Explorer: Tap on a file to play it. Tap and hold a file and then click the "Delete" button at bottom of screen to delete it from memory.</string>
+    <string name="app_name2">MediaPlayer</string>
+    <string name="hello_world2">Now Playing:</string>
+    <string name="initial_Time">0 min, 0 sec</string>
+    <string name="description">This is a button!</string>
+    <string name="title_activity_file_display">FileDisplay</string>
+    <string name="fileManager">View Files</string>
+    <string name="mediaPlayer">Media Player: Hit play for file to begin. To get the definition of a word, type the word into the "Search Word" box and click the "Define" button. To get alternate definitions, click the "Alternate" button. </string>
+
+</resources>
