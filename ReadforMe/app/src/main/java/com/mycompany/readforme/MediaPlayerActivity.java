@@ -48,7 +48,7 @@ public class MediaPlayerActivity extends Activity {
     private TextView tvWord;
     private EditText entryBox;
     private Button alternateButton;
-
+    private Button getDefinition;
     private File filePlayer;
 
 
@@ -78,11 +78,34 @@ public class MediaPlayerActivity extends Activity {
 
         tvWord = (TextView) findViewById(R.id.textViewDefinition);
         alternateButton = (Button) findViewById(R.id.buttonAlternate);
+        getDefinition = (Button) findViewById(R.id.buttonDefine);
         alternateButton.setEnabled(false);
+
+        getDefinition.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                helper = new LongmanAPIHelper();
+                showProgressDialog();
+                entryBox = (EditText) findViewById(R.id.editTextDefinition);
+                headWord = (entryBox.getText().toString());
+                new RetrieveDictionaryEntryTask().execute((Void)null); // .execute(null)
+
+                alternateButton.setEnabled(true);
+
+                alternateButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        counter++;
+                        showProgressDialog();
+                        new RetrieveAlternateDefinition().execute((Void)null);
+                    }
+                });
+            }
+        });
 
     }
 
-    public void define(View view)
+    /*public void define(View view)
     {
         helper = new LongmanAPIHelper();
         showProgressDialog();
@@ -91,14 +114,14 @@ public class MediaPlayerActivity extends Activity {
         new RetrieveDictionaryEntryTask().execute((Void)null); // .execute(null)
 
         alternateButton.setEnabled(true);
-        /*alternateButton.setOnClickListener(new View.OnClickListener() {
+        *//*alternateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 counter++;
                 showProgressDialog();
                 new RetrieveAlternateDefinition().execute();
             }
-        });*/
+        });*//*
 
     }
 
@@ -107,7 +130,7 @@ public class MediaPlayerActivity extends Activity {
         counter++;
         showProgressDialog();
         new RetrieveAlternateDefinition().execute((Void)null); // .execute(null)
-    }
+    }*/
 
 
     private void completeEntryLoad(String entry) {
