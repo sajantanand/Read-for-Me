@@ -1,0 +1,5 @@
+C:\Users\Sajant\AndroidStudioProjects\TTSDemo\app\build\intermediates\classes\debug
+C:\Users\Sajant\AndroidStudioProjects\TTSDemo\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-7b844da9f203011623dc426a34522ee60d3912fe.jar
+C:\Users\Sajant\AndroidStudioProjects\TTSDemo\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-b9917147b7c483a766fca7d6e31615b4374ea9b1.jar
+C:\Users\Sajant\AndroidStudioProjects\TTSDemo\app\build\intermediates\pre-dexed\debug\classes-a11796e4a6521d4d2afa75fc89775174c31da9cf.jar
+C:\Users\Sajant\AndroidStudioProjects\TTSDemo\app\build\intermediates\pre-dexed\debug\classes-e820c6add973872bd3a8dbb009cd4c5f04665366.jar
