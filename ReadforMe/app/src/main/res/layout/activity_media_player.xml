@@ -47,12 +47,12 @@
         android:id="@+id/imageButtonPlay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/imageButtonForward"
         android:layout_marginLeft="24dp"
-        android:layout_toRightOf="@+id/imageButtonForward"
         android:onClick="play"
         android:src="@android:drawable/ic_media_play"
-        android:contentDescription="@string/description" />
+        android:contentDescription="@string/description"
+        android:layout_alignTop="@+id/imageButtonForward"
+        android:layout_toStartOf="@+id/buttonDefine" />
 
     <SeekBar
         android:id="@+id/seekBar1"
@@ -60,25 +60,29 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/imageButtonForward"
         android:layout_toLeftOf="@+id/textViewEndTime"
-        android:layout_toRightOf="@+id/textViewStartTime" />
+        android:layout_toRightOf="@+id/textViewStartTime"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
 
     <TextView
         android:id="@+id/textViewStartTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/imageButtonForward"
-        android:layout_alignTop="@+id/seekBar1"
         android:text="@string/initial_Time"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignTop="@+id/seekBar1"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/seekBar1" />
 
     <TextView
         android:id="@+id/textViewEndTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/imageButtonRewind"
-        android:layout_alignTop="@+id/seekBar1"
         android:text="@string/initial_Time"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignTop="@+id/seekBar1"
+        android:layout_alignEnd="@+id/buttonAlternate"
+        android:layout_alignBottom="@+id/seekBar1" />
 
     <TextView
         android:id="@+id/textViewNowPlaying"
@@ -147,7 +151,8 @@
         android:layout_height="match_parent"
         android:layout_alignBaseline="@+id/textViewNowPlaying"
         android:layout_alignBottom="@+id/textViewNowPlaying"
-        android:layout_toRightOf="@+id/imageButtonPlay"
+        android:layout_toRightOf="@+id/textViewNowPlaying"
+        android:layout_marginLeft="5dp"
         android:text="TextView" />
 
     <TextView

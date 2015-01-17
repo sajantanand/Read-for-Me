@@ -14,7 +14,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.app.Activity;
 import android.util.Log;
-import android.view.Menu;
 import android.view.View;
 
 import android.widget.Button;
@@ -104,34 +103,6 @@ public class MediaPlayerActivity extends Activity {
         });
 
     }
-
-    /*public void define(View view)
-    {
-        helper = new LongmanAPIHelper();
-        showProgressDialog();
-        entryBox = (EditText) findViewById(R.id.editTextDefinition);
-        headWord = (entryBox.getText().toString());
-        new RetrieveDictionaryEntryTask().execute((Void)null); // .execute(null)
-
-        alternateButton.setEnabled(true);
-        *//*alternateButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                counter++;
-                showProgressDialog();
-                new RetrieveAlternateDefinition().execute();
-            }
-        });*//*
-
-    }
-
-    public void alternate(View view)
-    {
-        counter++;
-        showProgressDialog();
-        new RetrieveAlternateDefinition().execute((Void)null); // .execute(null)
-    }*/
-
 
     private void completeEntryLoad(String entry) {
         if (progressDialog != null) {
@@ -259,18 +230,11 @@ public class MediaPlayerActivity extends Activity {
             mediaPlayer.seekTo((int) startTime);
         }
         else{
-            Toast.makeText(getApplicationContext(),
-                    "Cannot jump backward 5 seconds",
-                    Toast.LENGTH_SHORT).show();
+            mediaPlayer.seekTo((int) 0);
         }
 
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_media_player, menu);
-        return true;
-    }
+
 
 }

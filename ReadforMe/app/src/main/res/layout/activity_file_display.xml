@@ -30,7 +30,7 @@
         android:layout_below="@+id/button0"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="10dp"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
         android:layout_below="@+id/button1"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="10dp" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
         android:layout_below="@id/button2"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="10dp" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
         android:layout_below="@+id/button3"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="10dp" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
         android:layout_below="@+id/button4"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="10dp" />
     <ImageButton
         android:id="@+id/imageButtonRewind"
         android:layout_width="wrap_content"
@@ -93,7 +93,7 @@
         android:src="@android:drawable/ic_media_ff"
         android:layout_below="@+id/button5"
         android:layout_toEndOf="@+id/delete"
-        android:layout_marginStart="49dp"
+        android:layout_marginStart="45dp"
         android:layout_marginTop="35dp" />
 
     <Button

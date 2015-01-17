@@ -1,10 +1,9 @@
 package com.mycompany.readforme;
 
 import android.content.Intent;
-import android.media.AudioManager;
+
 import android.media.MediaPlayer;
-import android.net.Uri;
-import android.os.Environment;
+
 import android.speech.tts.TextToSpeech;
 import android.os.Bundle;
 import android.speech.tts.UtteranceProgressListener;
@@ -16,7 +15,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 import java.io.File;
-import java.io.IOException;
+
 import java.util.HashMap;
 import java.util.Locale;
 
@@ -34,10 +33,7 @@ public class MainActivity extends Activity implements OnClickListener, OnInitLis
     public EditText fileName1;
     public EditText input;
     public Button synthesize;
-    /*public Button play;*/
 
-    /*private String extStorageDirectory = Environment.getExternalStorageDirectory().toString();      // "/storage/sdcard"
-    public String folderName = "/myFolder";*/
     public String fileName = null;
 
     public File file1;
@@ -56,18 +52,12 @@ public class MainActivity extends Activity implements OnClickListener, OnInitLis
         @Override
         public void onStart(String utteranceId)
         {
-            //Toast.makeText(getApplicationContext(), "Synthesis has begun.", Toast.LENGTH_SHORT).show();
-            //input.setText("Synthesis has begun.");
+
         }
 
         @Override
         public void onDone(String utteranceId)
         {
-            //Toast.makeText(getApplicationContext(), "Synthesis has finished.", Toast.LENGTH_SHORT).show();
-            //input.setText("Synthesis has finished.");
-            //speak(file1);
-
-            //play.setEnabled(true); //Does not work. Cannot edit widget from this thread
             transition();
         }
 
@@ -117,14 +107,13 @@ public class MainActivity extends Activity implements OnClickListener, OnInitLis
     {
 
 
-        if (tts != null) {
+        if (tts != null)
+        {
 
             String text = input.getText().toString();
 
-            if (!tts.isSpeaking()) {
-
-                //tts.speak(text, TextToSpeech.QUEUE_FLUSH, null, TextToSpeech.Engine.KEY_PARAM_UTTERANCE_IDThi );
-                //tts.speak(text, TextToSpeech.QUEUE_FLUSH, null);
+            if (!tts.isSpeaking())
+            {
 
                 fileManager(Settings.FOLDER_PATH);
 
@@ -137,7 +126,6 @@ public class MainActivity extends Activity implements OnClickListener, OnInitLis
                 tts.setOnUtteranceProgressListener(mProgressListener);
 
                 tts.synthesizeToFile(text, myHashRender, file1.getAbsolutePath());
-                //tts.synthesizeToFile(text, null, file1, TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID);
 
             }
         }
@@ -166,46 +154,6 @@ public class MainActivity extends Activity implements OnClickListener, OnInitLis
         startActivity(intent);
     }
 
-
-    /*public void speak(File fileToPlay)
-    {
-
-        MediaPlayer player = new MediaPlayer();
-        Uri.Builder builder1 = new Uri.Builder();
-
-
-        try {
-            player.setDataSource(this, builder1.build().fromFile(fileToPlay));
-            //Toast.makeText(newContext.getApplicationContext(), "Data source was set.", Toast.LENGTH_SHORT).show();
-            //player.setDataSource(newFile.getAbsolutePath());
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        player.setAudioStreamType(AudioManager.STREAM_MUSIC);
-
-        player.setOnPreparedListener(this);
-        player.prepareAsync();
-    }
-
-
-    public void onPrepared(MediaPlayer player2)
-    {
-        player2.setOnCompletionListener(completed);
-        player2.start();
-        Boolean isWorking = player2.isPlaying();
-
-        if ( isWorking )
-        {
-            Toast.makeText(this, "The player is working.", Toast.LENGTH_SHORT).show();
-        }
-        else
-        {
-            Toast.makeText(this, "The player is not working.", Toast.LENGTH_SHORT).show();
-        }
-
-    }*/
 
 //--------------------------------------------------------------------------------------------------
 
