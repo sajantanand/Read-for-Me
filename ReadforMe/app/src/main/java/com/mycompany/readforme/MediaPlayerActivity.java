@@ -34,11 +34,11 @@ public class MediaPlayerActivity extends Activity {
     private double startTime = 0;
     private double finalTime = 0;
     private Handler myHandler = new Handler();
-    private short forwardTime = 5000;
-    private short backwardTime = 5000;
+    private int forwardTime = 5000;
+    private int backwardTime = 5000;
     private SeekBar seekbar;
     private ImageButton playButton,pauseButton;
-    public static short oneTimeOnly = 0;
+    public int oneTimeOnly = 0;
 
     private ProgressDialog progressDialog;
     private String headWord;

@@ -15,7 +15,7 @@ public class Settings {
 	public static final String LOG_TAG = "PearsonSamDict";
 
     //Folder to which sound files are saved
-    public static final String FOLDER_PATH = "/myFolder";
+    public static final String FOLDER_PATH = "/ReadForMe";
 
     //Environmental path used by emulator
     public static final String ENVIRONMENTAL = Environment.getExternalStorageDirectory().toString();

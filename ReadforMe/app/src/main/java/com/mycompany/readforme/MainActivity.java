@@ -79,8 +79,7 @@ public class MainActivity extends Activity implements OnClickListener, OnInitLis
         fileName1 = ((EditText) findViewById(R.id.editText2));
         input = ((EditText) findViewById(R.id.editText1));
         synthesize = ((Button) findViewById(R.id.button1));
-        /*play = ((Button) findViewById(R.id.button2));
-        play.setEnabled(false);*/
+        fileManager(Settings.FOLDER_PATH);
 
         synthesize.setOnClickListener(this);
     }
@@ -114,8 +113,6 @@ public class MainActivity extends Activity implements OnClickListener, OnInitLis
 
             if (!tts.isSpeaking())
             {
-
-                fileManager(Settings.FOLDER_PATH);
 
                 fileName = fileName1.getText().toString();
                 file1 = new File(Settings.ENVIRONMENTAL + Settings.FOLDER_PATH + "/" + fileName + ".wav");

@@ -8,6 +8,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
+    <!--This is actually the rewind button-->
     <ImageButton
         android:id="@+id/imageButtonForward"
         android:layout_width="wrap_content"
@@ -15,44 +16,46 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="14dp"
-        android:onClick="forward"
-        android:src="@android:drawable/ic_media_ff"
-        android:contentDescription="@string/description"
-        android:layout_alignEnd="@+id/textViewNowPlaying" />
+        android:layout_toLeftOf="@+id/imageButtonPlay"
+        android:layout_marginRight="14dp"
+        android:onClick="rewind"
+        android:src="@android:drawable/ic_media_rew"
+        android:contentDescription="@string/description"/>
 
+    <!--This is actually the forward button-->
     <ImageButton
         android:id="@+id/imageButtonRewind"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignTop="@+id/imageButtonPause"
-        android:layout_marginLeft="22dp"
         android:layout_toRightOf="@+id/imageButtonPause"
-        android:onClick="rewind"
-        android:src="@android:drawable/ic_media_rew"
+        android:layout_marginLeft="14dp"
+        android:onClick="forward"
+        android:src="@android:drawable/ic_media_ff"
         android:contentDescription="@string/description" />
 
     <ImageButton
         android:id="@+id/imageButtonPause"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/imageButtonPlay"
-        android:layout_marginLeft="14dp"
-        android:layout_toRightOf="@+id/imageButtonPlay"
         android:onClick="pause"
         android:src="@android:drawable/ic_media_pause"
-        android:contentDescription="@string/description" />
+        android:contentDescription="@string/description"
+        android:layout_below="@+id/seekBar1"
+        android:layout_toEndOf="@+id/imageButtonPlay" />
 
     <ImageButton
         android:id="@+id/imageButtonPlay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
         android:onClick="play"
         android:src="@android:drawable/ic_media_play"
         android:contentDescription="@string/description"
-        android:layout_alignTop="@+id/imageButtonForward"
-        android:layout_toStartOf="@+id/buttonDefine" />
+        android:layout_below="@+id/seekBar1"
+        android:layout_toStartOf="@+id/textView" />
+
+    <!-- android:layout_alignEnd="@+id/textViewDefinition" -->
 
     <SeekBar
         android:id="@+id/seekBar1"
@@ -102,7 +105,8 @@
         android:hint="@string/message3"
         android:layout_below="@+id/textViewNowPlaying"
         android:layout_marginTop="50dp"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/buttonDefine" />
 
     <Button android:id="@+id/buttonDefine"
         android:layout_width="wrap_content"
@@ -112,8 +116,7 @@
         android:layout_marginTop="50dp"
         android:onClick="define"
         android:layout_alignBottom="@+id/editTextDefinition"
-        android:layout_toLeftOf="@+id/buttonAlternate"
-        android:layout_toRightOf="@+id/editTextDefinition" />
+        android:layout_toStartOf="@+id/buttonAlternate" />
 
     <Button android:id="@+id/buttonAlternate"
         android:layout_width="wrap_content"
@@ -121,7 +124,7 @@
         android:text="@string/button2"
         android:onClick="alternate"
         android:layout_alignTop="@+id/buttonDefine"
-        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignParentEnd="true"
         android:layout_alignBottom="@+id/buttonDefine" />
 
     <TextView android:id="@+id/textViewDefinition"
@@ -162,6 +165,13 @@
         android:id="@+id/textView2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textView"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>
