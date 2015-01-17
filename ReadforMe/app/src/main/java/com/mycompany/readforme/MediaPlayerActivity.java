@@ -34,11 +34,11 @@ public class MediaPlayerActivity extends Activity {
     private double startTime = 0;
     private double finalTime = 0;
     private Handler myHandler = new Handler();
-    private int forwardTime = 5000;
-    private int backwardTime = 5000;
+    private short forwardTime = 5000;
+    private short backwardTime = 5000;
     private SeekBar seekbar;
     private ImageButton playButton,pauseButton;
-    public static int oneTimeOnly = 0;
+    public static short oneTimeOnly = 0;
 
     private ProgressDialog progressDialog;
     private String headWord;
@@ -109,7 +109,6 @@ public class MediaPlayerActivity extends Activity {
             progressDialog.dismiss();
         }
         if (entry != null) {
-            //tvWord.setText(getFilesDir().toString() + "\n" + getExternalFilesDir(null).toString());
             tvWord.setText(entry);
         } else {
             tvWord.setText("Formatting error in returned response. Please try again.");

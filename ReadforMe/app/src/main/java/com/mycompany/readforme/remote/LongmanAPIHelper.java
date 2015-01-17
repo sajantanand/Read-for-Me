@@ -74,7 +74,17 @@ public class LongmanAPIHelper {
 
         if (multipleDef.size() <= 1)
         {
-            return "No alternate definitions are available.";
+            if (counter % 2 != 0) {
+                return "No alternate definitions are available.";
+            }
+            else
+            {
+                com.google.gson.JsonObject jsonObject = multipleDef.get(0).getAsJsonObject();
+                jsonArray = jsonObject.get("senses").getAsJsonArray();
+                jsonObject = jsonArray.get(0).getAsJsonObject();
+                jsonArray = jsonObject.get("definition").getAsJsonArray();
+                return (headword + ": " + jsonArray.get(0).getAsString());
+            }
         }
         int iteration = counter % multipleDef.size();
 
