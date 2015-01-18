@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">Read for Me</string>
-    <string name="words">Input Screen: Enter the text you wish to be converted into a sound file into the large box and press the "Synthesize File" button to write it to memory. To look at files previously creaked, click the "View Files" button.</string>
+    <string name="words">Input Screen: Enter the text you wish to be converted into a sound file into the large box and press the "Synthesize File" button to write it to memory. To look at files previously created, click the "View Files" button.</string>
     <string name="action_settings">Settings</string>
     <string name="buttonMessage">Synthesize File</string>
     <string name="button1">Define</string>
