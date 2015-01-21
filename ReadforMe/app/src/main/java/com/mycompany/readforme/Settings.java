@@ -9,7 +9,7 @@ import android.os.Environment;
 public class Settings {
 
 	// PUT YOUR API KEY HERE
-	public static final String API_KEY = "&apikey=enH7AhC56Rv8NoR6h0SZPfR0A5UQXUxB";
+	public static final String API_KEY = //Enter your API key here.
 
 	// Logging Unique Label
 	public static final String LOG_TAG = "PearsonSamDict";
